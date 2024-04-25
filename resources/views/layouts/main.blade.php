@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman {{ $page }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* Custom CSS untuk navbar */
+        .navbar-custom {
+            background-color: #FFEAE3; /* Warna latar belakang navbar */
+            color: #FFCBCB; /* Warna teks navbar */
+        }
+        .navbar-custom .navbar-brand {
+            color: #FFCBCB; /* Warna teks brand/navbar */
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFCBCB; /* Warna teks link navbar */
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #FFCBCB; /* Warna teks link navbar saat dihover */
+        }
+    </style>
+</head>
+<body>
+    @include('partials.navbar')
+
+    <div class="container mt-3">
+        @yield('isi')
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
